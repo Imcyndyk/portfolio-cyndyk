@@ -1,0 +1,48 @@
+// TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+$primaryFont: 'Open Sans', apple-system, sans-serif;
+
+// COLORS (https://tailwindcss.com/docs/customizing-colors)
+$primaryColor: #FFFFFF;
+$complementaryColor: #262614; 
+$complementarySkewColor: #403E3F;
+$highlightSkewColor:#717343; 
+$brandColor: #D98282; 
+$brandSkewColor: #499CA6; 
+$highlightColor: #F29A2E; 
+$succesColor: #16a34a; /* TAILWIND: GREEN 600 */
+$errorColor: #dc2626; /* TAILWIND: RED 600 */
+
+// BS-COLORS
+$white: #FFFFFF;
+$dark: $complementaryColor;
+$danger: $errorColor;
+
+// BS-UTILITIES: Spacer
+$spacer: 2rem;
+// BS-UTILITIES: Media Query Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 1200px,
+  md: 1250px,
+  lg: 1300px,
+  xl: 1350px,
+  xxl: 1400px
+);
+
+// MIXIN: Set text color dynamically 
+@mixin setBackgound($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+// FUNTIONS
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return $complementaryColor;
+  } @else {
+    @return $primaryColor;
+  }
+}
+
+$spacer: 2rem;

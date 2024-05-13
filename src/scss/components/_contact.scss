@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+// contactPage.scss
+#contact {
+    padding: 0rem auto;
+    
+    h1{
+        font-weight: bolder;
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+    
+    p{
+        font-size: 1.5em;
+    }
+
+    .card {
+    width: 25rem;
+    border: 1px solid $brandColor;
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .github{
+        color: $complementaryColor;
+        font-size: 5rem;
+        margin-right: 1rem;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $highlightColor;
+        }
+
+}
+    .linkedin {
+        color: $complementaryColor;
+        font-size: 5rem;
+        margin-right: 1rem;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $highlightColor;
+        }
+
+}
+}
+
+     

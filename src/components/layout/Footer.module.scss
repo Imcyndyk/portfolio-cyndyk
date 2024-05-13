@@ -1,0 +1,19 @@
+@use '../../scss/abstracts/' as *;
+
+footer {
+    text-align: center;
+    font-size: 0.8 rem;
+    font-weight: 300;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .light {
+    @include setBackgound($brandColor);
+  }
+  
+  .dark {
+    @include setBackgound(darken($complementaryColor, 3%));
+    }

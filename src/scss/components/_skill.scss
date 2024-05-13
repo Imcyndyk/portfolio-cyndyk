@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+
+#skill {
+  padding: 0rem auto;
+  display: flex;
+
+  .card {
+    padding: 1.5rem auto;
+    background-color: $brandSkewColor;
+
+    &:hover{
+      background-color: $highlightSkewColor;
+    }
+  }
+
+  }
+  .card-title {
+    font-weight: bold;
+    color: $primaryColor;
+  }
+
+  h2 {
+    font-weight: bolder;
+    font-size: 3rem;
+    padding: 1rem auto;
+  }
+

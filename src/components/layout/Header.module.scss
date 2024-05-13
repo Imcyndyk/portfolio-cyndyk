@@ -1,0 +1,49 @@
+@use '../../scss/abstracts/' as *;
+
+.light {
+    @include setBackgound($brandColor);
+    color: $primaryColor;
+    margin-bottom: 2rem;
+
+    .navLink {
+        color: $primaryColor;
+
+        &:hover {
+            color: $complementarySkewColor;
+        }
+        &:focus {
+            color: $complementarySkewColor;
+        }
+    }
+
+    .icon {
+        margin-bottom: 3px;
+        margin-right: 10px;
+        font-size: 2rem;
+        color: $complementaryColor;
+    }
+}
+
+.dark {
+    @include setBackgound(darken($complementaryColor, 3%));
+    color: $primaryColor;
+    margin-bottom: 2rem;
+
+    .navLink {
+        color: $primaryColor;
+
+        &:hover {
+            color: $brandColor;
+        }
+        &:focus {
+            color: $brandColor;
+        }
+    }
+
+    .icon {
+        margin-bottom: 3px;
+        margin-right: 10px;
+        font-size: 2rem;
+        color: $brandColor;
+    }
+}
